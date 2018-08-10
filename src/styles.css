@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+.layout-fullwidth #wrapper .sidebar {
+  left: -260px !important; 
+}
+
+.layout-fullwidth #wrapper .main {
+  width: 100% !important; 
+}
+
+.layout-fullwidth #wrapper .navbar {
+  left: 0 !important; 
+}
