@@ -308,23 +308,12 @@ section.section {
 	margin:0;
 	padding: 80px 0 60px 0;
 }
-
+.section-header p {
+	text-align: center;
+}
 .bg-white {
 	background-color: #fff;
 }
-
-/* ==========================
- --- Parallax ---
-============================= */
-
-#parallax1{
-	background-image: url(/assets/images/parallax/img1.jpg);
-}
-
-#testimonials{
-	background-image: url(/assets/images/parallax/img3.jpg);
-}
-
 
 /*Testimonial*/
 #testimonals {
@@ -392,16 +381,6 @@ section.section {
 	transition: all .3s ease;
 }
 
-.flex-direction-nav .flex-next {
-	right: -70px;
-	background: url(/assets/images/arrow_large_right.png) no-repeat top left;
-}
-
-.flex-direction-nav .flex-prev {
-	left: -70px;
-	background: url(/assets/images/arrow_large_left.png) no-repeat top left;
-}
-
 .flex-direction-nav a.flex-next:before {
 	content: none !important;
 }
@@ -410,12 +389,6 @@ section.section {
 .flex-direction-nav a:before {
 	content: none !important;
 }
-
-
-
-
-
-
 
 
 /* stats */

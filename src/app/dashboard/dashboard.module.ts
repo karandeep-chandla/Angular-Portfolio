@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkillComponent } from './skill/skill.component';
+import { ContactComponent } from './contact/contact.component';
+import { MainPanelComponent } from './main-panel/main-panel.component';
 
 @NgModule({
   imports: [
@@ -15,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   declarations: [
     DashboardComponent, 
-    HeaderComponent, SidebarComponent, AboutmeComponent, PortfolioComponent, FooterComponent
+    HeaderComponent, SidebarComponent, AboutmeComponent, PortfolioComponent, FooterComponent, SkillComponent, ContactComponent, MainPanelComponent
   ]
 })
 export class DashboardModule { }

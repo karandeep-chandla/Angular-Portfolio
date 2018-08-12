@@ -1,13 +1,23 @@
-<!-- LEFT SIDEBAR -->
-<div id="sidebar-nav" class="sidebar">
-  <div class="sidebar-scroll">
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-        <li><a href="elements.html" class=""><i class="lnr lnr-code"></i> <span>About me</span></a></li>
-        <li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>Skills</span></a></li>
-        <li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>Portfolio</span></a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
+<nav>
+	<ul class="nav">
+		
+		<li *ngFor="let nav of navs">
+			<a routerLink="{{nav.path}}" (click)="activatedLink(nav.name)" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+				<i class="lnr {{nav.icon}}"></i> 
+				<span>{{nav.name}}</span>
+			</a>
+		</li>
+
+		<!-- <li><a routerLink="/dashboard" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+        <li><a routerLink="/about" class=""><i class="lnr lnr-code"></i> <span>About me</span></a></li>
+        <li><a routerLink="/skill" class=""><i class="lnr lnr-cog"></i> <span>Skills</span></a></li>
+        <li><a routerLink="/portfolio" class=""><i class="lnr lnr-chart-bars"></i> <span>Portfolio</span></a></li>
+        <li><a routerLink="/contact" class=""><i class="lnr lnr-chart-bars"></i> <span>Contact</span></a></li> -->
+	</ul>
+
+	
+
+	<!-- <li title="{{item.name}}" *ngFor="let item of items">
+		<a routerLink="{{item.path}}" class="{{item.name}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a>
+	</li> -->
+</nav>

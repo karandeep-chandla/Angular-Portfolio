@@ -85,14 +85,14 @@ $(document).ready(function(){
   jQuery(".fancybox").fancybox();
 
   //testimonial
-  jQuery('.testimonials-slider').flexslider({
-    animation: "slide",
-    directionNav: true,
-    controlNav: true,
-    pauseOnHover: true,
-    slideshowSpeed: 4000,
-    direction: "horizontal" //Direction of slides
-  });
+  // jQuery('.testimonials-slider').flexslider({
+  //   animation: "slide",
+  //   directionNav: true,
+  //   controlNav: true,
+  //   pauseOnHover: true,
+  //   slideshowSpeed: 4000,
+  //   direction: "horizontal" //Direction of slides
+  // });
 
   if (Modernizr.mq("screen and (max-width:1024px)")) {
     jQuery("body").toggleClass("body");
@@ -195,4 +195,5 @@ $(document).ready(function(){
   $(window).load(initNice);
   $(window).resize(initNice);
 
+  
 })(jQuery);

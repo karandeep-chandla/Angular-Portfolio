@@ -1,20 +1,45 @@
-<div class="outer-main-wrapper">
-  <div class="vertical-align-wrapper">
-    <div class="container">
-      <div class="row">
-          <div class="col-sm-6 col-md-4 col-md-offset-4">
-              <div class="account-wall">
-                  <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
-                  <form class="form-signin">
-                  <input type="text" class="form-control" placeholder="Email" required autofocus>
-                  <input type="password" class="form-control" placeholder="Password" required>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                  <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                  </form>
-              </div>
-              <a routerLink="/register" class="text-center new-account">Create an account </a>
-          </div>
-      </div>
+<div id="page-transitions">
+
+    <div class="header header-dark">
+        <div class="top-sign show-right">
+            <a routerLink="/register" class="header-logo">
+                <i class="fa fa-sign-in"></i> Sign Up 
+            </a>
+        </div>
     </div>
-  </div>
+
+    <div id="page-content" class="page-content">
+        <div id="page-content-scroll">
+            <div class="cover-page cover-image">
+                <div class="cover-page-content">
+
+                    <div class="pageapp-login">
+                        <div class="hub-login-logo"></div>
+                        <div class="tag-line">Manage Resources Globally</div>
+                        <div class="spacer"></div>
+                        <div class="cover-field">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="user" id="user" required placeholder="User Name">
+                        </div>
+                        <div class="cover-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" title="8 characters minimum" required name="pwd" id="pwd" placeholder="Password">
+                        </div>
+
+                        <label style="" class="checkbox terms-agree-pod">
+                            <input type="checkbox" name="termsAgreed">
+                            I agree to the <a target="_blank" href="javascript:void(0);">Terms of Service</a> and <a target="_blank" href="javascript:void(0);">Privacy Policy</a>.
+                        </label>
+
+                        <a routerLink="/dashboard" class="pageapp-login-button button button-green signUpBtn"><i class="fa fa-arrow-right"></i>Login</a>
+                    </div>
+
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background"></div>
+
 </div>

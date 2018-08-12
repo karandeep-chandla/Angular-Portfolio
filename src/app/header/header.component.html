@@ -1,4 +1,4 @@
-<section id="header" class="appear"></section>
+<section id="header" class="appear">
 <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(5, 42, 62, 1);">
   <div class="container">
     <div class="navbar-header">
@@ -12,12 +12,13 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-        <li class="active"><a href="#intro">Skill</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#works">Portfolio</a></li>
-        <li><a href="#section-contact">Contact</a></li>
+        <li *ngFor="let item of items" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a href="{{item.path}}" (click)="activatedLink(item.name)" title="{{item.name}}">{{item.name}}</a></li>
       </ul>
     </div>
-    <!--/.navbar-collapse -->
   </div>
 </div>
+</section>
+
+<!-- <li title="{{item.name}}" *ngFor="let item of items">
+    <a routerLink="{{item.path}}" class="{{item.name}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a>
+  </li> -->

@@ -1,3 +1,49 @@
-<p>
-  register works!
-</p>
+<div id="page-transitions">
+
+    <div class="header header-dark">
+        <div class="top-sign show-right">
+            <a routerLink="/login" class="header-icon-4">
+            	<i class="fa fa-user"></i>  Login
+            </a>
+        </div>
+    </div>
+
+    <div id="page-content" class="page-content">
+        <div id="page-content-scroll">
+            <div class="cover-page cover-image">
+                <div class="cover-page-content">
+
+                    <div class="pageapp-login">
+                        <div class="hub-login-logo"></div>
+                        <div class="tag-line">Manage Resources Globally</div>
+                        <div class="spacer"></div>
+                        <div class="cover-field">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="user" id="user" required placeholder="User Name">
+                        </div>
+                        <div class="cover-field">
+                            <i class="fa fa-envelope-o"></i>
+                            <input type="email" name="email" id="email" required placeholder="Enter Your Email">
+                        </div>
+                        <div class="cover-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" title="8 characters minimum" required name="pwd" id="pwd" placeholder="Your Password">
+                        </div>
+
+                        <label style="" class="checkbox terms-agree-pod">
+                            <input type="checkbox" name="termsAgreed">
+                            I agree to the <a target="_blank" href="javascript:void(0);">Terms of Service</a> and <a target="_blank" href="javascript:void(0);">Privacy Policy</a>.
+                        </label>
+
+                        <a routerLink="/admin/dashboard" class="pageapp-login-button button button-green signUpBtn"><i class="fa fa-arrow-right"></i>Sign Up</a>
+                    </div>
+
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background"></div>
+
+</div>

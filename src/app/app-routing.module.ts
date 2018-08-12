@@ -14,14 +14,24 @@ import { RegisterComponent } from './components/register/register.component';
 import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
+
   { path: '', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  
+
   { path: 'skill', component: SkillComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'}
+
+
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  { path: 'about', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  { path: 'dashboard/skill', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  { path: 'dashboard/portfolio', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  { path: 'dashboard/contact', loadChildren: './dashboard/dashboard.module#DashboardModule'}
+  
 ];
 
 @NgModule({

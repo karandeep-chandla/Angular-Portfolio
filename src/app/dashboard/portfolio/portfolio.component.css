@@ -1,0 +1,12 @@
+.panel-heading {
+     padding: 20px 20px 0 20px;
+     position: relative;
+}
+.panel-title {
+     margin: 0;
+     font-size: 18px;
+     font-weight: 300;
+}
+.panel-body {
+     padding: 20px 20px 20px 20px;
+}

@@ -6,8 +6,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  public items;
+  currentLink = 'Home';
+  constructor() { 
+		this.items = [
+	  		{ 
+	  			path : '#about',
+	  			'name' : 'About me' 
+	  		},
+	  		{ 
+	  			path : '#skill',
+	  			'name' : 'Skill' 
+	  		},
+	  		{ 
+	  			path : '#works',
+	  			'name' : 'Portfolio' 
+	  		},
+	  		{ 
+	  			path : '#section-contact',
+	  			'name' : 'Contact' 
+	  		}
+	  	];
+	}
 
-  constructor() { }
+	activatedLink(clickedLink){
+		//console.log(clickedLink);
+		this.currentLink = clickedLink;
+	}
 
   ngOnInit() {
   }

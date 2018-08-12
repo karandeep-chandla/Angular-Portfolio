@@ -11,3 +11,10 @@
 .layout-fullwidth #wrapper .navbar {
   left: 0 !important; 
 }
+
+.section-heading {
+	text-align: center;
+}
+.section-description {
+	text-align: center;
+}
