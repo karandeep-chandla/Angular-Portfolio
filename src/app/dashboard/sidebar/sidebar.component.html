@@ -2,7 +2,7 @@
 	<ul class="nav">
 		
 		<li *ngFor="let nav of navs">
-			<a routerLink="{{nav.path}}" (click)="activatedLink(nav.name)" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+			<a id="{{nav.id}}" routerLink="{{nav.path}}" (click)="activatedLink(nav.name)" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
 				<i class="lnr {{nav.icon}}"></i> 
 				<span>{{nav.name}}</span>
 			</a>

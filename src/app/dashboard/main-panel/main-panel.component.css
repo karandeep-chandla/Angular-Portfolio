@@ -1,12 +1,75 @@
 .panel-heading {
-     padding: 20px 20px 0 20px;
-     position: relative;
+  padding: 20px 20px 0 20px;
+  position: relative;
 }
 .panel-title {
-     margin: 0;
-     font-size: 18px;
-     font-weight: 300;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
 }
 .panel-body {
-     padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+/*#about, #skill, #portfolio, #contact {
+  width: 100%;
+	float: left;
+	height: 100vh;
+}*/
+#about {
+  display: block;
+}
+#skill {
+  display: none;
+}
+#portfolio {
+  display: none;
+}
+#contact {
+  display: none;
+}
+
+form {
+  background-color: #f5f5fa;
+  width: 100%;
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+fieldset {
+  width: 100%;
+  float: left;
+  margin: 20px 0 0 0;
+}
+label {
+  width: 150px;
+  float: left;
+  line-height: 36px;
+}
+input {
+  background-color: #fff;
+  width: 300px;
+  height: 36px;
+  float: left;
+  padding: 0 15px;
+  border: 0;
+}
+textarea {
+  background-color: #fff;
+  width: 450px;
+  height: 90px;
+  float: left;
+  padding: 15px;
+  border: 0;
+  resize: none;
+  overflow-y: auto;
+}
+button {
+  background-color: #85b0be;
+  width: auto;
+  float: left;
+  margin: 20px 0 0 150px;
+  padding: 10px 15px;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
 }

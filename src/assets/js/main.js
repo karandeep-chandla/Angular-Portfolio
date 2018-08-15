@@ -81,6 +81,35 @@ $(document).ready(function(){
     $(".navbar-collapse").addClass('collapse');
   });
 
+  //#adminSkill, #adminPortfolio, #adminContact
+  $(document).on('click', '#adminAbout', function() {
+    $(".panel #about").show();
+    $(".panel #skill").hide();
+    $(".panel #portfolio").hide();
+    $(".panel #contact").hide();
+  });
+
+  $(document).on('click', '#adminSkill', function() {
+    $(".panel #about").hide();
+    $(".panel #skill").show();
+    $(".panel #portfolio").hide();
+    $(".panel #contact").hide();
+  });
+
+  $(document).on('click', '#adminPortfolio', function() {
+    $(".panel #about").hide();
+    $(".panel #skill").hide();
+    $(".panel #portfolio").show();
+    $(".panel #contact").hide();
+  });
+
+  $(document).on('click', '#adminContact', function() {
+    $(".panel #about").hide();
+    $(".panel #skill").hide();
+    $(".panel #portfolio").hide();
+    $(".panel #contact").show();
+  });
+
   // fancybox
   jQuery(".fancybox").fancybox();
 

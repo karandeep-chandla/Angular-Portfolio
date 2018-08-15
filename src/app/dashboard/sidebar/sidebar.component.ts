@@ -11,28 +11,32 @@ export class SidebarComponent implements OnInit {
   constructor() { 
 		this.navs = [
 
+  		// { 
+  		// 	'path' : '/dashboard',
+  		// 	'icon' : 'lnr-home',
+  		// 	'name' : 'Dashboard' 
+  		// },
   		{ 
-  			'path' : '/dashboard',
-  			'icon' : 'lnr-home',
-  			'name' : 'Dashboard' 
-  		},
-  		{ 
-  			'path' : '/about',
+        id     : 'adminAbout',
+  			'path' : '/dashboard#about',
   			'icon' : 'lnr-code',
   			'name' : 'About me' 
   		},
   		{ 
-  			'path' : '/dashboard/skill',
+        id     : 'adminSkill',
+  			'path' : '/dashboard#skill',
   			'icon' : 'lnr-cog',
   			'name' : 'Skills' 
   		},
   		{ 
-  			'path' : '/dashboard/portfolio',
+        id     : 'adminPortfolio',
+  			'path' : '/dashboard#portfolio',
   			'icon' : 'lnr-chart-bars',
   			'name' : 'Portfolio' 
   		},
   		{ 
-  			'path' : '/dashboard/contact',
+        id     : 'adminContact',
+  			'path' : '/dashboard#contact',
   			'icon' : 'lnr-chart-bars',
   			'name' : 'Contact' 
   		}
@@ -40,10 +44,17 @@ export class SidebarComponent implements OnInit {
   	];
 	}
 
-	activatedLink(clickedLink){
+  activatedLink(clickedLink){
 		//console.log(clickedLink);
 		this.currentLink = clickedLink;
-	}
+    // $('#about').hide();
+    // $('#skill').show();
+    // $('#portfolio').hide();
+    // $('#contact').hide();
+    
+    //$('.sidebar-container').hide();
+    
+  }
 
 	
 

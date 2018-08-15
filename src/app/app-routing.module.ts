@@ -13,6 +13,9 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LandingComponent } from './components/landing/landing.component';
 
+
+import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
+
 const routes: Routes = [
 
   { path: '', component: LandingComponent },
@@ -27,10 +30,14 @@ const routes: Routes = [
 
 
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-  { path: 'about', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-  { path: 'dashboard/skill', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-  { path: 'dashboard/portfolio', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-  { path: 'dashboard/contact', loadChildren: './dashboard/dashboard.module#DashboardModule'}
+
+  // { path: 'about', component: AdminAboutComponent }
+
+
+  // { path: 'about', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  // { path: 'dashboard/skill', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  // { path: 'dashboard/portfolio', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  // { path: 'dashboard/contact', loadChildren: './dashboard/dashboard.module#DashboardModule'}
   
 ];
 
@@ -49,6 +56,7 @@ export const routingComponents = [
     PortfolioComponent,
     ContactComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminAboutComponent
 ];
 
